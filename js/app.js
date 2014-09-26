@@ -36,5 +36,10 @@
   })(jQuery);
 
   function renderMap($){
-    var mapbox = L.mapbox.map('mapwrap', 'brendanryan.i2gj4hln');
+
+    var mapbox = L.mapbox.map('mapwrap', 'brendanryan.i2gj4hln', {
+      doubleClickZoom: false,
+      boxZoom: false,
+      scrollWheelZoom: false,
+    });
   }
